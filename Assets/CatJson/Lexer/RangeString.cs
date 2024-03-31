@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 using UnityEngine.Profiling;
 
 
@@ -197,57 +198,57 @@ namespace CatJson
 
         public byte AsByte()
         {
-            return byte.Parse(AsSpan());
+            return byte.Parse(AsSpan(),provider: CultureInfo.InvariantCulture);
         }
         
         public sbyte AsSByte()
         {
-            return sbyte.Parse(AsSpan());
+            return sbyte.Parse(AsSpan(),provider: CultureInfo.InvariantCulture);
         }
 
         public short AsShort()
         {
-            return short.Parse(AsSpan());
+            return short.Parse(AsSpan(),provider: CultureInfo.InvariantCulture);
         }
         
         public ushort AsUShort()
         {
-            return ushort.Parse(AsSpan());
+            return ushort.Parse(AsSpan(),provider: CultureInfo.InvariantCulture);
         }
         
         public int AsInt()
         {
-            return int.Parse(AsSpan());
+            return int.Parse(AsSpan(),provider: CultureInfo.InvariantCulture);
         }
         
         public uint AsUInt()
         {
-            return uint.Parse(AsSpan());
+            return uint.Parse(AsSpan(),provider: CultureInfo.InvariantCulture);
         }
 
         public long AsLong()
         {
-            return long.Parse(AsSpan());
+            return long.Parse(AsSpan(),provider: CultureInfo.InvariantCulture);
         }
         
         public ulong AsULong()
         {
-            return ulong.Parse(AsSpan());
+            return ulong.Parse(AsSpan(),provider: CultureInfo.InvariantCulture);
         }
         
         public float AsFloat()
         {
-            return float.Parse(AsSpan());
+            return float.Parse(AsSpan(),provider: CultureInfo.InvariantCulture);
         }
 
         public double AsDouble()
         {
-            return double.Parse(AsSpan());
+            return double.Parse(AsSpan(), provider: CultureInfo.InvariantCulture);
         }
 
         public decimal AsDecimal()
         {
-            return decimal.Parse(AsSpan());
+            return decimal.Parse(AsSpan(), provider: CultureInfo.InvariantCulture);
         }
 
         public DateTime AsDateTime()

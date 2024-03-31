@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 
 namespace CatJson
 {
@@ -10,7 +11,7 @@ namespace CatJson
         /// <inheritdoc />
         public override void ToJson(JsonParser parser, ulong value, Type type, Type realType, int depth)
         {
-            parser.Append(value.ToString());
+            parser.Append(value.ToString(CultureInfo.InvariantCulture));
         }
 
         /// <inheritdoc />

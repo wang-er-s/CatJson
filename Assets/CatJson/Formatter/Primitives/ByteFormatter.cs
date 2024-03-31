@@ -1,4 +1,5 @@
 using System;
+using System.Globalization;
 
 namespace CatJson
 {
@@ -9,7 +10,7 @@ namespace CatJson
     {
         public override void ToJson(JsonParser parser, byte value, Type type, Type realType, int depth)
         {
-            parser.Append(value.ToString());
+            parser.Append(value.ToString(CultureInfo.InvariantCulture));
         }
 
         public override byte ParseJson(JsonParser parser, Type type, Type realType)
